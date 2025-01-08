@@ -8,7 +8,7 @@
         {
             "name": "Account2",
             "profile": "iam_user_profile",
-            "regions": []
+            "regions": ["us-east-1"]
         }
     ]
 }
