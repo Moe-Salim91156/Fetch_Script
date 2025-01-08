@@ -1,0 +1,15 @@
+{
+    "accounts": [
+        {
+            "name": "Account1",
+            "profile": "default",
+            "regions": []
+        },
+        {
+            "name": "Account2",
+            "profile": "iam_user_profile",
+            "regions": []
+        }
+    ]
+}
+
