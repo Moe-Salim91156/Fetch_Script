@@ -10,7 +10,7 @@ def fetch_security_groups(session, region, account_name):
                 'resource_type': 'security_group',
                 'resource_id': sg['GroupId'],
                 'region': region,
-                'account': account_name,  # Add account name here
+                'account': account_name,  
                 'metadata': {
                     'GroupName': sg['GroupName'],
                     'Description': sg['Description'],

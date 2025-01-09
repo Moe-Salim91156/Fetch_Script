@@ -11,13 +11,13 @@ def fetch_iam_roles(session, region, account_name):
                 'resource_type': 'iam_role',
                 'resource_id': role['RoleName'],
                 'region': region,
-                'account': account_name,  # Add account name here
+                'account': account_name,
                 'metadata': {
                     'RoleId': role['RoleId'],
                     'Arn': role['Arn'],
                     'CreateDate': str(role['CreateDate']),
-                    'Tags': 'N/A'  # IAM roles' tags can be fetched if needed
-                }
+                    'Tags': 'N/A'  
+                    }
             })
     except Exception as e:
         print(f"Error fetching IAM roles: {e}")
