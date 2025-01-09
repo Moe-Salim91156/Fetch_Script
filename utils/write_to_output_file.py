@@ -4,7 +4,7 @@ def write_to_file(resources, file_name="output.txt"):
         """Format metadata into key-value pairs."""
         return "\n".join([f"    {key}: {value}" for key, value in metadata.items()])
 
-    with open(file_name, "w") as file:
+    with open("output.txt", "a") as file:
         current_account = None
         current_region = None
 
@@ -26,4 +26,6 @@ def write_to_file(resources, file_name="output.txt"):
             file.write(f"{format_metadata(resource['metadata'])}\n")
             file.write("-" * 40 + "\n")
 
-        print(f"Output successfully written to {file_name}")
+        print(f"Output successfully written to {file_name}\n")
+        print(f"Note: If You dont see a resource, that means it doesnt exist !.")
+

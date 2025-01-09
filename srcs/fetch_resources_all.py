@@ -5,7 +5,7 @@ import boto3
 from fetchers.fetch_vpcs import fetch_vpcs
 from fetchers.fetch_Ec2 import fetch_ec2_instances
 from fetchers.fetch_security_groups import fetch_security_groups
-from fetchers.fetch_EBS_Volumes import fetch_ebs_volumes
+from fetchers.fetch_EBS_Volumes import fetch_ebs
 from fetchers.fetch_subnets import fetch_subnets
 from fetchers.fetch_acls import fetch_acls
 from fetchers.fetch_rds import fetch_rds_instances
@@ -44,18 +44,19 @@ def fetch_resources_for_accounts(config):
             log_message(f"Fetching resources for account '{account_name}' in region '{region}'")
             resources = []
             resources.extend(fetch_vpcs(session, region, account_name))
-            #resources.extend(fetch_ec2(session, region, account_name))
-            #resources.extend(fetch_rds(session, region, account_name))
-            #resources.extend(fetch_s3_buckets(session, region, account_name))
-            #resources.extend(fetch_iam_roles(session, region, account_name))
-            #resources.extend(fetch_security_groups(session, region, account_name))
-            #resources.extend(fetch_ebs(session, region, account_name))
-            #resources.extend(fetch_subnets(session, region, account_name))
-            #resources.extend(fetch_acls(session, region, account_name))
+            resources.extend(fetch_ec2_instances(session, region, account_name))
+            resources.extend(fetch_rds_instances(session, region, account_name))
+            resources.extend(fetch_S3_Buckets(session, region, account_name))
+            resources.extend(fetch_iam_roles(session, region, account_name))
+            resources.extend(fetch_security_groups(session, region, account_name))
+            resources.extend(fetch_ebs(session, region, account_name))
+            resources.extend(fetch_subnets(session, region, account_name))
+            resources.extend(fetch_acls(session, region, account_name))
             all_resources.extend(resources)
             log_message(f"Completed fetching resources for account '{account_name}' in region '{region}'")
 
     output_file = os.path.join(os.getcwd(), "output.txt")
     write_to_file(all_resources, output_file)
     log_message(f"All resources written to {output_file}")
+    print("logs has been saved in log.txt")
 

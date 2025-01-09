@@ -1,68 +1,46 @@
-[2025-01-09 08:14:42] Skipping account: Missing 'profile_name'
-[2025-01-09 08:14:42] Skipping account: Missing 'profile_name'
-[2025-01-09 08:15:45] Error: 'config.json' not found. Please provide a valid configuration file.
-[2025-01-09 08:15:52] Starting resource fetching process...
-[2025-01-09 08:16:07] Starting resource fetching process...
-[2025-01-09 08:17:48] Starting resource fetching process...
-[2025-01-09 08:18:15] Starting resource fetching process...
-[2025-01-09 08:18:15] Skipping account: Missing 'profile_name'
-[2025-01-09 08:18:15] Skipping account: Missing 'profile_name'
-[2025-01-09 08:18:32] Starting resource fetching process...
-[2025-01-09 08:18:32] Skipping account: Missing 'account_name'
-[2025-01-09 08:18:32] Skipping account: Missing 'account_name'
-[2025-01-09 08:19:11] Starting resource fetching process...
-[2025-01-09 08:19:11] Skipping account: Missing 'account_name'
-[2025-01-09 08:19:11] Skipping account: Missing 'account_name'
-[2025-01-09 08:19:11] All resources written to /home/moe/work/Fetch_Script/output.txt
-[2025-01-09 08:19:11] Resource fetching process completed successfully.
-[2025-01-09 08:19:31] Starting resource fetching process...
-[2025-01-09 08:19:31] Skipping account: Missing 'account_name'
-[2025-01-09 08:19:31] Skipping account: Missing 'account_name'
-[2025-01-09 08:19:31] All resources written to /home/moe/work/Fetch_Script/output.txt
-[2025-01-09 08:19:31] Resource fetching process completed successfully.
-[2025-01-09 08:22:04] Starting resource fetching process...
-[2025-01-09 08:22:07] Fetching resources for account 'Account1' in region 'us-east-1'
-[2025-01-09 08:22:08] Completed fetching resources for account 'Account1' in region 'us-east-1'
-[2025-01-09 08:22:08] Fetching resources for account 'Account2' in region 'us-east-1'
-[2025-01-09 08:22:09] Completed fetching resources for account 'Account2' in region 'us-east-1'
-[2025-01-09 08:22:09] All resources written to /home/moe/work/Fetch_Script/output.txt
-[2025-01-09 08:22:09] Resource fetching process completed successfully.
-[2025-01-09 08:24:19] Starting resource fetching process...
-[2025-01-09 08:24:21] Fetching resources for account 'Account1' in region 'ap-south-1'
-[2025-01-09 08:24:21] Completed fetching resources for account 'Account1' in region 'ap-south-1'
-[2025-01-09 08:24:21] Fetching resources for account 'Account1' in region 'eu-north-1'
-[2025-01-09 08:24:22] Completed fetching resources for account 'Account1' in region 'eu-north-1'
-[2025-01-09 08:24:22] Fetching resources for account 'Account1' in region 'eu-west-3'
-[2025-01-09 08:24:22] Completed fetching resources for account 'Account1' in region 'eu-west-3'
-[2025-01-09 08:24:22] Fetching resources for account 'Account1' in region 'eu-west-2'
-[2025-01-09 08:24:23] Completed fetching resources for account 'Account1' in region 'eu-west-2'
-[2025-01-09 08:24:23] Fetching resources for account 'Account1' in region 'eu-west-1'
-[2025-01-09 08:24:24] Completed fetching resources for account 'Account1' in region 'eu-west-1'
-[2025-01-09 08:24:24] Fetching resources for account 'Account1' in region 'ap-northeast-3'
-[2025-01-09 08:24:25] Completed fetching resources for account 'Account1' in region 'ap-northeast-3'
-[2025-01-09 08:24:25] Fetching resources for account 'Account1' in region 'ap-northeast-2'
-[2025-01-09 08:24:26] Completed fetching resources for account 'Account1' in region 'ap-northeast-2'
-[2025-01-09 08:24:26] Fetching resources for account 'Account1' in region 'ap-northeast-1'
-[2025-01-09 08:24:28] Completed fetching resources for account 'Account1' in region 'ap-northeast-1'
-[2025-01-09 08:24:28] Fetching resources for account 'Account1' in region 'ca-central-1'
-[2025-01-09 08:24:29] Completed fetching resources for account 'Account1' in region 'ca-central-1'
-[2025-01-09 08:24:29] Fetching resources for account 'Account1' in region 'sa-east-1'
-[2025-01-09 08:24:30] Completed fetching resources for account 'Account1' in region 'sa-east-1'
-[2025-01-09 08:24:30] Fetching resources for account 'Account1' in region 'ap-southeast-1'
-[2025-01-09 08:24:31] Completed fetching resources for account 'Account1' in region 'ap-southeast-1'
-[2025-01-09 08:24:31] Fetching resources for account 'Account1' in region 'ap-southeast-2'
-[2025-01-09 08:24:33] Completed fetching resources for account 'Account1' in region 'ap-southeast-2'
-[2025-01-09 08:24:33] Fetching resources for account 'Account1' in region 'eu-central-1'
-[2025-01-09 08:24:33] Completed fetching resources for account 'Account1' in region 'eu-central-1'
-[2025-01-09 08:24:33] Fetching resources for account 'Account1' in region 'us-east-1'
-[2025-01-09 08:24:34] Completed fetching resources for account 'Account1' in region 'us-east-1'
-[2025-01-09 08:24:34] Fetching resources for account 'Account1' in region 'us-east-2'
-[2025-01-09 08:24:35] Completed fetching resources for account 'Account1' in region 'us-east-2'
-[2025-01-09 08:24:35] Fetching resources for account 'Account1' in region 'us-west-1'
-[2025-01-09 08:24:36] Completed fetching resources for account 'Account1' in region 'us-west-1'
-[2025-01-09 08:24:36] Fetching resources for account 'Account1' in region 'us-west-2'
-[2025-01-09 08:24:37] Completed fetching resources for account 'Account1' in region 'us-west-2'
-[2025-01-09 08:24:37] Fetching resources for account 'Account2' in region 'us-east-1'
-[2025-01-09 08:24:38] Completed fetching resources for account 'Account2' in region 'us-east-1'
-[2025-01-09 08:24:38] All resources written to /home/moe/work/Fetch_Script/output.txt
-[2025-01-09 08:24:38] Resource fetching process completed successfully.
+[2025-01-09 11:05:04] Starting resource fetching process...
+[2025-01-09 11:05:06] Fetching resources for account 'Account1' in region 'us-east-1'
+[2025-01-09 11:05:13] Completed fetching resources for account 'Account1' in region 'us-east-1'
+[2025-01-09 11:05:13] Fetching resources for account 'Account2' in region 'us-east-1'
+[2025-01-09 11:05:19] Completed fetching resources for account 'Account2' in region 'us-east-1'
+[2025-01-09 11:05:19] All resources written to /home/moe/work/Fetch_Script/output.txt
+[2025-01-09 11:05:19] Resource fetching process completed successfully.
+[2025-01-09 11:05:54] Starting resource fetching process...
+[2025-01-09 11:05:55] Fetching resources for account 'Account1' in region 'ap-south-1'
+[2025-01-09 11:05:59] Completed fetching resources for account 'Account1' in region 'ap-south-1'
+[2025-01-09 11:05:59] Fetching resources for account 'Account1' in region 'eu-north-1'
+[2025-01-09 11:06:03] Completed fetching resources for account 'Account1' in region 'eu-north-1'
+[2025-01-09 11:06:03] Fetching resources for account 'Account1' in region 'eu-west-3'
+[2025-01-09 11:06:07] Completed fetching resources for account 'Account1' in region 'eu-west-3'
+[2025-01-09 11:06:07] Fetching resources for account 'Account1' in region 'eu-west-2'
+[2025-01-09 11:06:11] Completed fetching resources for account 'Account1' in region 'eu-west-2'
+[2025-01-09 11:06:11] Fetching resources for account 'Account1' in region 'eu-west-1'
+[2025-01-09 11:06:16] Completed fetching resources for account 'Account1' in region 'eu-west-1'
+[2025-01-09 11:06:16] Fetching resources for account 'Account1' in region 'ap-northeast-3'
+[2025-01-09 11:06:27] Completed fetching resources for account 'Account1' in region 'ap-northeast-3'
+[2025-01-09 11:06:27] Fetching resources for account 'Account1' in region 'ap-northeast-2'
+[2025-01-09 11:06:37] Completed fetching resources for account 'Account1' in region 'ap-northeast-2'
+[2025-01-09 11:06:37] Fetching resources for account 'Account1' in region 'ap-northeast-1'
+[2025-01-09 11:06:49] Completed fetching resources for account 'Account1' in region 'ap-northeast-1'
+[2025-01-09 11:06:49] Fetching resources for account 'Account1' in region 'ca-central-1'
+[2025-01-09 11:06:56] Completed fetching resources for account 'Account1' in region 'ca-central-1'
+[2025-01-09 11:06:56] Fetching resources for account 'Account1' in region 'sa-east-1'
+[2025-01-09 11:07:06] Completed fetching resources for account 'Account1' in region 'sa-east-1'
+[2025-01-09 11:07:06] Fetching resources for account 'Account1' in region 'ap-southeast-1'
+[2025-01-09 11:07:15] Completed fetching resources for account 'Account1' in region 'ap-southeast-1'
+[2025-01-09 11:07:15] Fetching resources for account 'Account1' in region 'ap-southeast-2'
+[2025-01-09 11:07:29] Completed fetching resources for account 'Account1' in region 'ap-southeast-2'
+[2025-01-09 11:07:29] Fetching resources for account 'Account1' in region 'eu-central-1'
+[2025-01-09 11:07:33] Completed fetching resources for account 'Account1' in region 'eu-central-1'
+[2025-01-09 11:07:33] Fetching resources for account 'Account1' in region 'us-east-1'
+[2025-01-09 11:07:39] Completed fetching resources for account 'Account1' in region 'us-east-1'
+[2025-01-09 11:07:39] Fetching resources for account 'Account1' in region 'us-east-2'
+[2025-01-09 11:07:46] Completed fetching resources for account 'Account1' in region 'us-east-2'
+[2025-01-09 11:07:46] Fetching resources for account 'Account1' in region 'us-west-1'
+[2025-01-09 11:07:54] Completed fetching resources for account 'Account1' in region 'us-west-1'
+[2025-01-09 11:07:54] Fetching resources for account 'Account1' in region 'us-west-2'
+[2025-01-09 11:08:02] Completed fetching resources for account 'Account1' in region 'us-west-2'
+[2025-01-09 11:08:02] Fetching resources for account 'Account2' in region 'us-east-1'
+[2025-01-09 11:08:08] Completed fetching resources for account 'Account2' in region 'us-east-1'
+[2025-01-09 11:08:08] All resources written to /home/moe/work/Fetch_Script/output.txt
+[2025-01-09 11:08:08] Resource fetching process completed successfully.

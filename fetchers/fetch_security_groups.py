@@ -1,16 +1,5 @@
 import boto3
-
-def fetch_security_groups(session, region):
-    """
-    Fetch security groups for the specified AWS region.
-
-    Args:
-        session: Boto3 session object.
-        region: The AWS region.
-
-    Returns:
-        A list of security groups.
-    """
+def fetch_security_groups(session, region, account_name):
     security_groups = []
     try:
         ec2_client = session.client('ec2', region_name=region)
@@ -18,12 +7,19 @@ def fetch_security_groups(session, region):
         
         for sg in response['SecurityGroups']:
             security_groups.append({
-                'GroupId': sg.get('GroupId'),
-                'GroupName': sg.get('GroupName'),
-                'Description': sg.get('Description'),
-                'VpcId': sg.get('VpcId')
+                'resource_type': 'security_group',
+                'resource_id': sg['GroupId'],
+                'region': region,
+                'account': account_name,  # Add account name here
+                'metadata': {
+                    'GroupName': sg['GroupName'],
+                    'Description': sg['Description'],
+                    'VpcId': sg.get('VpcId', 'N/A'),
+                    'Tags': sg.get('Tags', 'N/A')
+                }
             })
     except Exception as e:
-        print(f"Error fetching security groups in {region}: {e}")
+        print(f"Error fetching security groups: {e}")
+    
     return security_groups
 
