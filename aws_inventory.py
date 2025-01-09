@@ -1,6 +1,6 @@
 import json
 from srcs.fetch_resources_all import fetch_resources_for_accounts
-from utils.logging import log_message
+from utils.helper_utils.display_logs import log_message
 
 def main():
     config_file = 'config/config.json'

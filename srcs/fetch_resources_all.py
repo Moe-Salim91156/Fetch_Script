@@ -12,13 +12,14 @@ from fetchers.fetch_rds import fetch_rds_instances
 from fetchers.fetch_S3_Buckets import fetch_S3_Buckets
 from fetchers.fetch_iam_roles import fetch_iam_roles
 
-from utils.create_session import create_aws_session
-from utils.display_results import display_resources
-from utils.get_regions import get_user_input_regions
-from utils.get_regions import get_all_regions
-from utils.read_config_file import read_config_file
-from utils.logging import log_message
-from utils.write_to_output_file import write_to_file
+from utils.helper_utils.create_session import create_aws_session
+from utils.helper_utils.display_results import display_resources
+from utils.helper_utils.get_regions import get_user_input_regions
+from utils.helper_utils.get_regions import get_all_regions
+from utils.helper_utils.read_config_file import read_config_file
+from utils.helper_utils.display_logs import log_message
+from utils.helper_utils.write_to_output_file import write_to_file
+from utils.db_utils.init import initialize_db
 
 def fetch_resources_for_accounts(config):
     all_resources = []
@@ -55,8 +56,7 @@ def fetch_resources_for_accounts(config):
             all_resources.extend(resources)
             log_message(f"Completed fetching resources for account '{account_name}' in region '{region}'")
 
-    output_file = os.path.join(os.getcwd(), "output.txt")
-    write_to_file(all_resources, output_file)
-    log_message(f"All resources written to {output_file}")
+    write_to_file(all_resources)
+    log_message(f"All resources written to /output_files/output.txt")
     print("logs has been saved in log.txt")
 
