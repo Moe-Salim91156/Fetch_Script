@@ -1,17 +1,24 @@
 import boto3
+import boto3
 
-def fetch_vpcs(session, region):
-    vpcs = []
+def fetch_vpcs(session, region, account_name):
+    client = session.client('ec2', region_name=region)
     try:
-        ec2_client = session.client('ec2', region_name=region)
-        response = ec2_client.describe_vpcs()
-        for vpc in response['Vpcs']:
+        response = client.describe_vpcs()
+        vpcs = []
+        for vpc in response.get('Vpcs', []):
             vpcs.append({
-                'VpcId': vpc.get('VpcId'),
-                'CidrBlock': vpc.get('CidrBlock'),
-                'IsDefault': vpc.get('IsDefault')
+                "resource_type": "VPC",
+                "resource_id": vpc["VpcId"],
+                "region": region,
+                "account": account_name,
+                "metadata": {
+                    "cidr_block": vpc.get("CidrBlock"),
+                    "is_default": vpc.get("IsDefault"),
+                    "state": vpc.get("State")
+                }
             })
+        return vpcs
     except Exception as e:
-        print(f"Error fetching VPCs in {region}: {e}")
-    return vpcs
-
+        print(f"Error fetching VPCs for account {account_name} in region {region}: {e}")
+        return []

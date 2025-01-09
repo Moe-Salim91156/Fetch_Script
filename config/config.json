@@ -1,13 +1,13 @@
 {
     "accounts": [
         {
-            "name": "Account1",
-            "profile": "default",
+            "account_name": "Account1",
+            "profile_name": "default",
             "regions": []
         },
         {
-            "name": "Account2",
-            "profile": "iam_user_profile",
+            "account_name": "Account2",
+            "profile_name": "iam_user_profile",
             "regions": ["us-east-1"]
         }
     ]

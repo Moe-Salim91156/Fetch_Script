@@ -1,0 +1,168 @@
+
+=== Account: Account1 ===
+
+--- Region: ap-south-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-0bbb56b00a713726f
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: eu-north-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-04ad250d25bf9df13
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: eu-west-3 ---
+
+Resource Type: VPC
+Resource ID: vpc-004dc7ef6a56457f6
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: eu-west-2 ---
+
+Resource Type: VPC
+Resource ID: vpc-0a1a0a9b632bb677a
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: eu-west-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-0f9d17403271d210f
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: ap-northeast-3 ---
+
+Resource Type: VPC
+Resource ID: vpc-0570316d8ed895fab
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: ap-northeast-2 ---
+
+Resource Type: VPC
+Resource ID: vpc-0fd7572ad16b43129
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: ap-northeast-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-00720b939e23158f0
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: ca-central-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-0503d67a9a3bef2ee
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: sa-east-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-0e63cdf3aa9a6a43f
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: ap-southeast-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-046e347dfe8c82710
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: ap-southeast-2 ---
+
+Resource Type: VPC
+Resource ID: vpc-09d220a23415c4619
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: eu-central-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-08490446859aafce1
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: us-east-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-071708cdb39aeefcc
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: us-east-2 ---
+
+Resource Type: VPC
+Resource ID: vpc-03e23752ac43b4b01
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: us-west-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-0c77b1f0bcaae4a46
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+--- Region: us-west-2 ---
+
+Resource Type: VPC
+Resource ID: vpc-05db53c08388e1ab6
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------
+
+=== Account: Account2 ===
+
+--- Region: us-east-1 ---
+
+Resource Type: VPC
+Resource ID: vpc-071708cdb39aeefcc
+Metadata:
+    cidr_block: 172.31.0.0/16
+    is_default: True
+    state: available
+----------------------------------------

@@ -10,4 +10,13 @@ def display_results(resource_name, resources, account_name, region):
             print(resource)
     print(f"{'='*50}")
 
+def display_resources(resources):
+    for resource in resources:
+        print(f"Resource Type: {resource['resource_type']}")
+        print(f"Resource ID: {resource['resource_id']}")
+        print(f"Region: {resource['region']}")
+        print("Metadata:")
+        for key, value in resource['metadata'].items():
+            print(f"  {key}: {value}")
+        print("=" * 40)
 
