@@ -20,8 +20,10 @@ from utils.helper_utils.read_config_file import read_config_file
 from utils.helper_utils.display_logs import log_message
 from utils.helper_utils.write_to_output_file import write_to_file
 from utils.db_utils.init import initialize_db
+from utils.db_utils.insert import insert_resources_into_db
+from utils.db_utils.display import display_resources_table
 
-def fetch_resources_for_accounts(config):
+def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
     all_resources = []
     for account in config.get('accounts', []):
         profile_name = account.get('profile_name')
@@ -56,7 +58,6 @@ def fetch_resources_for_accounts(config):
             all_resources.extend(resources)
             log_message(f"Completed fetching resources for account '{account_name}' in region '{region}'")
 
-    write_to_file(all_resources)
-    log_message(f"All resources written to /output_files/output.txt")
-    print("logs has been saved in log.txt")
-
+    # Store resources in the database
+    insert_resources_into_db(all_resources, db_path)
+    display_resources_table(resources)

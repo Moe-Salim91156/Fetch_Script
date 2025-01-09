@@ -1,6 +1,8 @@
 import json
+import os
 from srcs.fetch_resources_all import fetch_resources_for_accounts
 from utils.helper_utils.display_logs import log_message
+from utils.db_utils.init import initialize_db
 
 def main():
     config_file = 'config/config.json'
@@ -15,6 +17,7 @@ def main():
         return
 
     log_message("Starting resource fetching process...")
+    initialize_db()
     fetch_resources_for_accounts(config)
     log_message("Resource fetching process completed successfully.")
 
