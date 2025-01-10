@@ -28,17 +28,17 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
     for account in config.get('accounts', []):
         profile_name = account.get('profile_name')
         if not profile_name:
-            log_message(f"Skipping account: Missing 'profile_name'")
+            log_message(f"Skipping account: Missing 'profile_name'","WARNING")
             continue
 
         session = create_aws_session(profile_name)
         if not session:
-            log_message(f"Failed to create session for profile: {profile_name}")
+            log_message(f"Failed to create session for profile: {profile_name}","ERROR")
             continue
 
         account_name = account.get('account_name')
         if not account_name:
-            log_message(f"Skipping account: Missing 'account_name'")
+            log_message(f"Skipping account: Missing 'account_name'","WARNING")
             continue
 
         regions = account.get('regions') or get_user_input_regions(account_name)
@@ -60,4 +60,5 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
 
     # Store resources in the database
     insert_resources_into_db(all_resources, db_path)
-    display_resources_table(resources)
+    log_message(f"output has been inserted in output_files/output.txt","HINTS")
+    #display_resources_table(resources)

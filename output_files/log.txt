@@ -177,3 +177,123 @@
 [2025-01-10 00:08:35] Completed fetching resources for account 'Root_Account' in region 'us-west-1'
 [2025-01-10 00:08:35] Failed to create session for profile: iam_user_profile
 [2025-01-10 00:08:35] Resource fetching process completed successfully.
+[2025-01-10 08:44:13] Starting resource fetching process...
+[2025-01-10 08:44:16] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:44:26] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:44:26] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:44:33] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:44:33] Resource fetching process completed successfully.
+[2025-01-10 08:44:53] Starting resource fetching process...
+[2025-01-10 08:44:56] Fetching resources for account 'Root_Account' in region 'ap-south-1'
+[2025-01-10 08:45:02] Completed fetching resources for account 'Root_Account' in region 'ap-south-1'
+[2025-01-10 08:45:02] Fetching resources for account 'Root_Account' in region 'eu-north-1'
+[2025-01-10 08:45:07] Completed fetching resources for account 'Root_Account' in region 'eu-north-1'
+[2025-01-10 08:45:07] Fetching resources for account 'Root_Account' in region 'eu-west-3'
+[2025-01-10 08:45:11] Completed fetching resources for account 'Root_Account' in region 'eu-west-3'
+[2025-01-10 08:45:11] Fetching resources for account 'Root_Account' in region 'eu-west-2'
+[2025-01-10 08:45:16] Completed fetching resources for account 'Root_Account' in region 'eu-west-2'
+[2025-01-10 08:45:16] Fetching resources for account 'Root_Account' in region 'eu-west-1'
+[2025-01-10 08:45:21] Completed fetching resources for account 'Root_Account' in region 'eu-west-1'
+[2025-01-10 08:45:21] Fetching resources for account 'Root_Account' in region 'ap-northeast-3'
+[2025-01-10 08:45:33] Completed fetching resources for account 'Root_Account' in region 'ap-northeast-3'
+[2025-01-10 08:45:33] Fetching resources for account 'Root_Account' in region 'ap-northeast-2'
+[2025-01-10 08:45:45] Completed fetching resources for account 'Root_Account' in region 'ap-northeast-2'
+[2025-01-10 08:45:45] Fetching resources for account 'Root_Account' in region 'ap-northeast-1'
+[2025-01-10 08:45:57] Completed fetching resources for account 'Root_Account' in region 'ap-northeast-1'
+[2025-01-10 08:45:57] Fetching resources for account 'Root_Account' in region 'ca-central-1'
+[2025-01-10 08:46:04] Completed fetching resources for account 'Root_Account' in region 'ca-central-1'
+[2025-01-10 08:46:04] Fetching resources for account 'Root_Account' in region 'sa-east-1'
+[2025-01-10 08:46:15] Completed fetching resources for account 'Root_Account' in region 'sa-east-1'
+[2025-01-10 08:46:15] Fetching resources for account 'Root_Account' in region 'ap-southeast-1'
+[2025-01-10 08:46:24] Completed fetching resources for account 'Root_Account' in region 'ap-southeast-1'
+[2025-01-10 08:46:24] Fetching resources for account 'Root_Account' in region 'ap-southeast-2'
+[2025-01-10 08:46:37] Completed fetching resources for account 'Root_Account' in region 'ap-southeast-2'
+[2025-01-10 08:46:37] Fetching resources for account 'Root_Account' in region 'eu-central-1'
+[2025-01-10 08:46:42] Completed fetching resources for account 'Root_Account' in region 'eu-central-1'
+[2025-01-10 08:46:42] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:46:48] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:46:48] Fetching resources for account 'Root_Account' in region 'us-east-2'
+[2025-01-10 08:46:56] Completed fetching resources for account 'Root_Account' in region 'us-east-2'
+[2025-01-10 08:46:56] Fetching resources for account 'Root_Account' in region 'us-west-1'
+[2025-01-10 08:47:04] Completed fetching resources for account 'Root_Account' in region 'us-west-1'
+[2025-01-10 08:47:04] Fetching resources for account 'Root_Account' in region 'us-west-2'
+[2025-01-10 08:47:13] Completed fetching resources for account 'Root_Account' in region 'us-west-2'
+[2025-01-10 08:47:13] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:47:20] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:47:20] Resource fetching process completed successfully.
+[2025-01-10 08:51:34] Starting resource fetching process...
+[2025-01-10 08:51:36] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:51:44] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:51:44] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:51:51] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:51:51] Resource fetching process completed successfully.
+[2025-01-10 08:53:32] Starting resource fetching process...
+[2025-01-10 08:53:47] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:53:55] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 08:53:55] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:54:02] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 08:54:02] Resource fetching process completed successfully.
+[2025-01-10 09:03:36] [INFO] Starting resource fetching process...
+[2025-01-10 09:03:44] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:03:51] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:03:51] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:03:58] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:03:58] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:04:10] [INFO] Starting resource fetching process...
+[2025-01-10 09:04:12] [INFO] Starting resource fetching process...
+[2025-01-10 09:04:15] [INFO] Fetching resources for account 'Root_Account' in region 'us-es-1'
+[2025-01-10 09:07:11] [INFO] Starting resource fetching process...
+[2025-01-10 09:07:11] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:08:40] [ERROR] Error: 'config/config.jsons' not found. Please provide a valid configuration file.
+[2025-01-10 09:08:47] [INFO] Starting resource fetching process...
+[2025-01-10 09:08:47] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:08:52] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:09:00] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:09:00] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:09:00] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:09:07] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:09:07] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:11:14] [INFO] Starting resource fetching process...
+[2025-01-10 09:11:14] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:11:17] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:11:24] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:11:24] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:11:24] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:11:31] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:11:31] [INFO] output sucessfully inserted in output_files/output.txt
+[2025-01-10 09:11:31] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:11:50] [INFO] Starting resource fetching process...
+[2025-01-10 09:11:50] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:11:54] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:12:01] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:12:01] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:12:01] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:12:08] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:12:08] [WARNING] output sucessfully inserted in output_files/output.txt
+[2025-01-10 09:12:08] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:13:02] [INFO] Starting resource fetching process...
+[2025-01-10 09:13:02] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:13:05] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:13:13] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:13:13] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:13:13] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:13:19] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:13:20] [HINTS] output sucessfully inserted in output_files/output.txt
+[2025-01-10 09:13:20] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:17:29] [INFO] Starting resource fetching process...
+[2025-01-10 09:17:29] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:17:33] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:17:40] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:17:40] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:17:40] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:17:47] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:19:00] [INFO] Starting resource fetching process...
+[2025-01-10 09:19:00] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:19:02] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:19:09] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:19:09] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:19:09] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:19:16] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:19:16] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:19:16] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:19:16] [INFO] Resource fetching process completed successfully.
