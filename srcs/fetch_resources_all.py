@@ -24,6 +24,7 @@ from utils.db_utils.insert import insert_resources_into_db
 from utils.db_utils.display import display_resources_table
 
 def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
+    write_to_file([],"w")
     all_resources = []
     for account in config.get('accounts', []):
         profile_name = account.get('profile_name')
@@ -57,8 +58,7 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
             resources.extend(fetch_acls(session, region, account_name))
             all_resources.extend(resources)
             log_message(f"Completed fetching resources for account '{account_name}' in region '{region}'")
+            write_to_file(resources,"a")
 
-    # Store resources in the database
     insert_resources_into_db(all_resources, db_path)
     log_message(f"output has been inserted in output_files/output.txt","HINTS")
-    #display_resources_table(resources)
