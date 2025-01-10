@@ -1,11 +1,9 @@
-[2025-01-10 12:13:35] [INFO] Session for Profile : (default) has been created Sucessfully
-[2025-01-10 12:13:42] [INFO] Fetching resources for account 'Root_Account' in region 'us-west-1'
-[2025-01-10 12:13:51] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-west-1'
-[2025-01-10 12:13:51] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
-[2025-01-10 12:13:57] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
-[2025-01-10 12:13:57] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
-[2025-01-10 12:13:57] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
-[2025-01-10 12:14:04] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
-[2025-01-10 12:14:04] [INFO] Resources successfully inserted into output_files/resources.db
-[2025-01-10 12:14:04] [HINTS] output has been inserted in output_files/output.txt
-[2025-01-10 12:14:04] [INFO] Resource fetching process completed successfully.
+[2025-01-10 12:20:12] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 12:20:17] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 12:20:24] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 12:20:24] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 12:20:24] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 12:20:31] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 12:20:31] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 12:20:31] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 12:20:31] [INFO] Resource fetching process completed successfully.
