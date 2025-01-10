@@ -10,10 +10,10 @@ def main():
         with open(config_file, "r") as file:
             config = json.load(file)
     except FileNotFoundError:
-        log_message(f"Error: '{config_file}' not found. Please provide a valid configuration file.","ERROR")
+        log_message(f"Error: ({config_file}) not found. Please provide a valid configuration file.","ERROR")
         return
     except json.JSONDecodeError:
-        log_message(f"Error: '{config_file}' contains invalid JSON. Please fix the file and try again.","ERROR")
+        log_message(f"Error: ({config_file}) contains invalid JSON. Please fix the file and try again.","ERROR")
         return
 
     log_message("Starting resource fetching process...")

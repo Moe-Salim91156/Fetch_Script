@@ -1,5 +1,5 @@
 import boto3
-import boto3
+from utils.helper_utils.display_logs import log_message
 
 def fetch_vpcs(session, region, account_name):
     client = session.client('ec2', region_name=region)

@@ -1,4 +1,5 @@
 import boto3
+from utils.helper_utils.display_logs import log_message
 
 def fetch_ec2_instances(session, region,account_name):
     ec2_instance = []
@@ -17,5 +18,5 @@ def fetch_ec2_instances(session, region,account_name):
                     'Account_name': account_name,
                     })
     except Exception as e:
-        print(f"erorr fetching EC2 instance for {account_name} in {region}, {e}")
+        log_message(f"erorr fetching EC2 instance for {account_name} in {region}, {e}")
     return (ec2_instance)

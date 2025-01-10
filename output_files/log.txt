@@ -297,3 +297,70 @@
 [2025-01-10 09:19:16] [INFO] Resources successfully inserted into output_files/resources.db
 [2025-01-10 09:19:16] [HINTS] output has been inserted in output_files/output.txt
 [2025-01-10 09:19:16] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:23:56] [INFO] Starting resource fetching process...
+[2025-01-10 09:23:56] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:23:59] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:24:06] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:24:07] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:24:07] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:24:13] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:24:13] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:24:13] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:24:13] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:24:36] [INFO] Starting resource fetching process...
+[2025-01-10 09:24:36] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:24:38] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:26:28] [INFO] Starting resource fetching process...
+[2025-01-10 09:26:28] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:26:34] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:26:41] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:26:41] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:26:41] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:26:48] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:26:48] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:26:48] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:26:48] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:28:00] [INFO] Starting resource fetching process...
+[2025-01-10 09:28:00] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:28:03] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:28:04] [INFO] Ec2 instances has been fetched correctly
+[2025-01-10 09:28:10] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:28:10] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:28:10] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:28:11] [INFO] Ec2 instances has been fetched correctly
+[2025-01-10 09:28:17] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:28:17] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:28:17] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:28:17] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:28:30] [INFO] Starting resource fetching process...
+[2025-01-10 09:28:30] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:28:36] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:28:43] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:28:43] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:28:43] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:28:50] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:28:50] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:28:50] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:28:50] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:29:06] [INFO] Starting resource fetching process...
+[2025-01-10 09:29:06] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:29:09] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:29:10] [INFO] VPC has been fetched correctly
+[2025-01-10 09:29:16] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:29:16] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:29:16] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:29:17] [INFO] VPC has been fetched correctly
+[2025-01-10 09:29:23] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:29:23] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:29:23] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:29:23] [INFO] Resource fetching process completed successfully.
+[2025-01-10 09:30:23] [INFO] Starting resource fetching process...
+[2025-01-10 09:30:23] [INFO] Session for Profile : (default) has been created Sucessfully
+[2025-01-10 09:30:26] [INFO] Fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:30:36] [INFO] Completed fetching resources for account 'Root_Account' in region 'us-east-1'
+[2025-01-10 09:30:36] [INFO] Session for Profile : (iam_user_profile) has been created Sucessfully
+[2025-01-10 09:30:36] [INFO] Fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:30:43] [INFO] Completed fetching resources for account 'IAM_Account' in region 'us-east-1'
+[2025-01-10 09:30:43] [INFO] Resources successfully inserted into output_files/resources.db
+[2025-01-10 09:30:43] [HINTS] output has been inserted in output_files/output.txt
+[2025-01-10 09:30:43] [INFO] Resource fetching process completed successfully.
