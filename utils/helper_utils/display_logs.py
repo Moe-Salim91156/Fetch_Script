@@ -18,7 +18,7 @@ def log_message(message, log_level="INFO"):
 
     colored_message = f"{color}[{timestamp}] [{log_level}] {message}{Style.RESET_ALL}"
     print(colored_message)
-
+    
     with open("output_files/log.txt", "a") as log_file:
         log_file.write(f"[{timestamp}] [{log_level}] {message}\n")
 
