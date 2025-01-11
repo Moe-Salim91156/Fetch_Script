@@ -21,8 +21,6 @@ def main():
     try:
         log_message("Starting resource fetching process...")
         initialize_db()
-
-        # Attempt to fetch resources
         success = fetch_resources_for_accounts(config)
         if not success:
             log_message("Error: Resource fetching failed. Exiting the script.", "ERROR")

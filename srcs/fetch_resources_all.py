@@ -27,51 +27,60 @@ from utils.db_utils.insert import insert_resources_into_db
 from utils.db_utils.display import display_resources_table
 
 def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
-    write_to_file([],"w")
+    "fetch all resources form accounts and displays them, also cheks for erros"
+    write_to_file([], "w")
     with open("output_files/log.txt", "w") as log_file_handle:
         log_file_handle.truncate(0)
 
     all_resources = []
-    account_summary = {}  # To keep track of resource counts per account
+    overall_success = True  # flag to Track overall success
 
     for account in config.get('accounts', []):
         profile_name = account.get('profile_name')
         if not profile_name:
-            log_message(f"Skipping account: Missing 'profile_name'","WARNING")
+            log_message(f"Skipping account: Missing 'profile_name'", "WARNING")
+            overall_success = False
             continue
 
         session = create_aws_session(profile_name)
         if not session:
-            log_message(f"Failed to create session for profile: {profile_name}","ERROR")
+            log_message(f"Failed to create session for profile: {profile_name}", "ERROR")
+            overall_success = False
             continue
 
         account_name = account.get('account_name')
         if not account_name:
-            log_message(f"Skipping account: Missing 'account_name'","WARNING")
+            log_message(f"Skipping account: Missing 'account_name'", "WARNING")
+            overall_success = False
             continue
 
         regions = account.get('regions') or get_user_input_regions(account_name)
 
-        account_resources = {}  # To track resources per region in an account
-
         for region in regions:
-            log_message(f"Fetching resources for account {Style.BRIGHT}({account_name})in region({region})")
-            resources = []
-            all_resources = []
-            resources.extend(fetch_vpcs(session, region, account_name))
-            resources.extend(fetch_ec2_instances(session, region, account_name))
-            resources.extend(fetch_rds_instances(session, region, account_name))
-            resources.extend(fetch_S3_Buckets(session, region, account_name))
-            resources.extend(fetch_iam_roles(session, region, account_name))
-            resources.extend(fetch_security_groups(session, region, account_name))
-            resources.extend(fetch_ebs(session, region, account_name))
-            resources.extend(fetch_subnets(session, region, account_name))
-            resources.extend(fetch_acls(session, region, account_name))
+            try:
+                log_message(f"Fetching resources for account {Style.BRIGHT}({account_name}) in region ({region})")
+                resources = []
+                resources.extend(fetch_vpcs(session, region, account_name))
+                resources.extend(fetch_ec2_instances(session, region, account_name))
+                resources.extend(fetch_rds_instances(session, region, account_name))
+                resources.extend(fetch_S3_Buckets(session, region, account_name))
+                resources.extend(fetch_iam_roles(session, region, account_name))
+                resources.extend(fetch_security_groups(session, region, account_name))
+                resources.extend(fetch_ebs(session, region, account_name))
+                resources.extend(fetch_subnets(session, region, account_name))
+                resources.extend(fetch_acls(session, region, account_name))
+                log_message(f"Completed fetching resources for account {Style.BRIGHT}({account_name}){Style.RESET_ALL} in region ({region})")
+                write_to_file(resources, "a")
+                write_to_terminal(resources)
+                all_resources.extend(resources)
+            except Exception as e:
+                log_message(f"Error fetching resources for account {account_name} in region {region}. Details: {e}", "ERROR")
+                overall_success = False
 
-            account_resources[region] = resources
-            all_resources.extend(resources)
-            log_message(f"Completed fetching resources for account {Style.BRIGHT}({account_name}){Style.RESET_ALL} in region ({region})")
-            write_to_file(resources, "a")
-            write_to_terminal(resources)
+    if all_resources:
+        insert_resources_into_db(all_resources, db_path)
+    else:
+        log_message("No resources fetched to insert into the database.", "WARNING")
 
-    insert_resources_into_db(all_resources, db_path)
+    return overall_success
+
