@@ -14,7 +14,7 @@ This script enumerates AWS resources across multiple accounts and regions. It re
 - EBS Volumes
 - Network ACLs
 
-The results are stored in `resources.db` and summarized/displayed in the terminal / You can Check out the output.txt if you wanna copy the results and log.txt for the last run logs.
+The results are stored in `resources.db` and summarized/displayed in the terminal
 
 ## Prerequisites
 
@@ -117,3 +117,7 @@ Once inside the SQLite shell, you can view all the resources with:
 ```sql
 SELECT * FROM resources;
 ```
+## Output Files
+
+- **output.txt**: Contains a clean summary of the resources enumerated.
+- **log.txt**: Contains the log of the last run, useful for debugging.
