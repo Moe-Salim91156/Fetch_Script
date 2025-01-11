@@ -49,8 +49,10 @@ aws configure --profile <profile-name>
 You will need to provide your AWS Access Key ID, Secret Access Key, default region, and output format.
 
 ### 4. Prepare the Config File
-respect the  ~/.aws/credentials structure  for example :
+respect the  `~/.aws/credentials` structure  for example :
 ```bash
+cat ~/.aws/credentials
+
 [default] 
 aws_access_key_id = <your acess key>
 aws_secret_access_key = <your secret access key>
