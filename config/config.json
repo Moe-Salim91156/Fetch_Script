@@ -1,14 +1,9 @@
 {
     "accounts": [
         {
-            "account_name": "Root_Account",
-            "profile_name": "default",
-            "regions": []
-        },
-        {
-            "account_name": "IAM_Account",
-            "profile_name": "iam_user_profile",
-            "regions": ["us-east-1"]
+            "account_name": "New_Account",
+            "profile_name": "new_account_profile",
+            "regions": ["us-west-2", "eu-central-1"]
         }
     ]
 }
