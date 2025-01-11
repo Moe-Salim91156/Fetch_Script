@@ -59,6 +59,7 @@ Create or update the configuration file `config.json` inside the `config/` folde
             "profile_name": "new_account_profile",
             "regions": ["us-west-2", "eu-central-1"]
         }
+    # add other accounts/profiles 
     ]
 }
 ```
