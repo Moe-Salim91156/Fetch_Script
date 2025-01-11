@@ -29,7 +29,7 @@ source venv/bin/activate
 #### On Windows:
 ```bash
 python -m venv venv
-.env\Scripts\activate
+.\venv\Scripts\activate
 ```
 
 ### 2. Install Dependencies
