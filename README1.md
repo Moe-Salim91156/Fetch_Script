@@ -1,4 +1,3 @@
-
 # AWS Inventory Script
 
 ## Description
@@ -14,7 +13,7 @@ This script enumerates AWS resources across multiple accounts and regions. It re
 - EBS Volumes
 - Network ACLs
 
-The results are stored in `resources.db` and summarized/displayed in the terminal.
+The results are summarized and displayed in the terminal.
 
 ## Prerequisites
 
@@ -29,7 +28,7 @@ source venv/bin/activate
 #### On Windows:
 ```bash
 python -m venv venv
-.env\Scriptsctivate
+.\venv\Scripts\activate
 ```
 
 ### 2. Install Dependencies
@@ -43,14 +42,18 @@ pip install -r requirements.txt
 
 Make sure your AWS CLI is configured with valid credentials:
 ```bash
-aws configure --profile <profile-name>
+aws configure
 ```
+
+Make sure your AWS CLI is configured with valid credentials:
+
+aws configure --profile <profile-name>
 
 You will need to provide your AWS Access Key ID, Secret Access Key, default region, and output format.
 
 ### 4. Prepare the Config File
 
-Create or update the configuration file `config.json` inside the `config/` folder. The file should have the following structure for multiple accounts:
+Create or update the configuration file config.json inside the config/ folder. The file should have the following structure for multiple accounts:
 ```json
 {
     "accounts": [
@@ -62,14 +65,15 @@ Create or update the configuration file `config.json` inside the `config/` folde
         {
             "account_name": "New_Account",
             "profile_name": "new_account_profile",
-            "regions": ["us-west-2", "eu-central-1"]
+            "regions": ["us-west-2", "eu-central-1"] # or u can put [] for all regions
         }
     ]
 }
+
 ```
 
 - **accounts**: A list of AWS accounts to access.
-- **profile_name**: The AWS profile inside the account or for cross-account access.
+- **profile_name**: The AWS profile inside account or whole other account.
 - **regions**: (Optional) A list of regions to query. If omitted, the script will prompt the user to input regions.
 
 ### 5. Run the Script
@@ -101,16 +105,4 @@ python aws_inventory.py
   - EBS Volumes
   - Network ACLs
 
-## Storing and Accessing Results
 
-The script stores the fetched data in the `resources.db` SQLite database file located in the `output_files/` folder. To access the data, you can use the following command:
-
-```bash
-sqlite3 output_files/resources.db
-```
-
-Once inside the SQLite shell, you can view all the resources with:
-
-```sql
-SELECT * FROM resources;
-```
