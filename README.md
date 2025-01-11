@@ -14,7 +14,7 @@ This script enumerates AWS resources across multiple accounts and regions. It re
 - EBS Volumes
 - Network ACLs
 
-The results are stored in `resources.db` and summarized/displayed in the terminal.
+The results are stored in `resources.db` and summarized/displayed in the terminal / You can Check out the output.txt if you wanna copy the results and log.txt for the last run logs.
 
 ## Prerequisites
 
