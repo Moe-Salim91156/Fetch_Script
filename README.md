@@ -2,7 +2,7 @@
 # AWS Inventory Script
 
 ## Description
-This script enumerates AWS resources across multiple accounts and regions. It retrieves information about the following resources:
+This script Fetches AWS resources across multiple accounts and regions:
 
 - VPC
 - EC2 Instances
