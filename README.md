@@ -55,11 +55,6 @@ Create or update the configuration file `config.json` inside the `config/` folde
 {
     "accounts": [
         {
-            "account_name": "Root_Account",
-            "profile_name": "default",
-            "regions": ["us-east-1"]
-        },
-        {
             "account_name": "New_Account",
             "profile_name": "new_account_profile",
             "regions": ["us-west-2", "eu-central-1"]
