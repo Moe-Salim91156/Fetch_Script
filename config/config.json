@@ -2,7 +2,6 @@
     "accounts": [
         {
             "account_name": "Root_Account",
-            "Description": "default_account",
             "profile_name": "default",
             "regions": []
         },

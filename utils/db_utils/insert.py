@@ -29,7 +29,6 @@ def insert_resources_into_db(resources, db_path="output_files/resources.db"):
             ))
 
         conn.commit()
-        log_message(f"Resources successfully inserted into {db_path}")
 
     except sqlite3.Error as e:
         if logger:

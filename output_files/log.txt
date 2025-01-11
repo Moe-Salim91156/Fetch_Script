@@ -1,4 +1,5 @@
-[2025-01-11 09:00:34] [INFO] Session for Profile : (default) has been created Sucessfully
-[2025-01-11 09:00:40] [INFO] Fetching resources for account [1m(Root_Account)in region(us-west-1)
-[2025-01-11 09:00:49] [INFO] Completed fetching resources for account [1m(Root_Account)[0m in region (us-west-1)
-[2025-01-11 09:00:49] [INFO] Fetching resources for account [1m(Root_Account)in region(us-east-1)
+[2025-01-11 18:55:17] [ERROR] Error Creating Session for : default
+[2025-01-11 18:55:17] [ERROR] Failed to create session for profile: default
+[2025-01-11 18:55:17] [ERROR] Error Creating Session for : iam_user_profile
+[2025-01-11 18:55:17] [ERROR] Failed to create session for profile: iam_user_profile
+[2025-01-11 18:55:17] [ERROR] Error: Resource fetching failed. Exiting the script.

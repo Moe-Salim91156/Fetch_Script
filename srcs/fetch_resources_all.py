@@ -57,6 +57,7 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
         for region in regions:
             log_message(f"Fetching resources for account {Style.BRIGHT}({account_name})in region({region})")
             resources = []
+            all_resources = []
             resources.extend(fetch_vpcs(session, region, account_name))
             resources.extend(fetch_ec2_instances(session, region, account_name))
             resources.extend(fetch_rds_instances(session, region, account_name))
@@ -73,6 +74,4 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
             write_to_file(resources, "a")
             write_to_terminal(resources)
 
-
     insert_resources_into_db(all_resources, db_path)
-    log_message(f"output has been inserted in output_files/output.txt","HINTS")
