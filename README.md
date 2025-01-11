@@ -50,11 +50,11 @@ You will need to provide your AWS Access Key ID, Secret Access Key, default regi
 
 ### 4. Prepare the Config File
 respect the  ~/.aws/credentials structure  for example :
-
+```bash
 [default] 
 aws_access_key_id = <your acess key>
 aws_secret_access_key = <your secret access key>
-
+```
 Create or update the configuration file `config.json` inside the `config/` folder. The file should have the following structure for multiple accounts:
 ```json
 {
