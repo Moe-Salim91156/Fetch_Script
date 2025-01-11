@@ -1,10 +1,10 @@
 
 === Account: Root_Account ===
 
---- Region: us-east-1 ---
+--- Region: us-west-1 ---
 
 Resource Type: VPC
-Resource ID: vpc-071708cdb39aeefcc
+Resource ID: vpc-0c77b1f0bcaae4a46
 Metadata:
     cidr_block: 172.31.0.0/16
     is_default: True
@@ -27,73 +27,33 @@ Metadata:
     Tags: N/A
 ----------------------------------------
 Resource Type: security_group
-Resource ID: sg-057e1841c22d4586a
+Resource ID: sg-02a79e0a2d998292c
 Metadata:
     GroupName: default
     Description: default VPC security group
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: security_group
-Resource ID: sg-000ba8b20ef9fc312
-Metadata:
-    GroupName: MYSGGROUP
-    Description: TESTING SCRIPT
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: [{'Key': 'name', 'Value': 'test security groups'}]
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0e7e44b6d3cf60b58
-Metadata:
-    CidrBlock: 172.31.48.0/20
-    AvailabilityZone: us-east-1e
-    VpcId: vpc-071708cdb39aeefcc
+    VpcId: vpc-0c77b1f0bcaae4a46
     Tags: N/A
 ----------------------------------------
 Resource Type: subnet
-Resource ID: subnet-07adc4992f36ea9e6
-Metadata:
-    CidrBlock: 172.31.64.0/20
-    AvailabilityZone: us-east-1f
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0cfc424d49edc08ec
-Metadata:
-    CidrBlock: 172.31.80.0/20
-    AvailabilityZone: us-east-1a
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0ddb659445d316f19
-Metadata:
-    CidrBlock: 172.31.16.0/20
-    AvailabilityZone: us-east-1b
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0021be1373b19a385
-Metadata:
-    CidrBlock: 172.31.32.0/20
-    AvailabilityZone: us-east-1c
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0110824f32ecd753b
+Resource ID: subnet-0831275b313de1c99
 Metadata:
     CidrBlock: 172.31.0.0/20
-    AvailabilityZone: us-east-1d
-    VpcId: vpc-071708cdb39aeefcc
+    AvailabilityZone: us-west-1c
+    VpcId: vpc-0c77b1f0bcaae4a46
+    Tags: N/A
+----------------------------------------
+Resource Type: subnet
+Resource ID: subnet-000012ece966ff79a
+Metadata:
+    CidrBlock: 172.31.16.0/20
+    AvailabilityZone: us-west-1a
+    VpcId: vpc-0c77b1f0bcaae4a46
     Tags: N/A
 ----------------------------------------
 Resource Type: network_acl
-Resource ID: acl-0d945c4b448406e47
+Resource ID: acl-0b11ab8e77e345666
 Metadata:
-    VpcId: vpc-071708cdb39aeefcc
+    VpcId: vpc-0c77b1f0bcaae4a46
     Tags: []
 ----------------------------------------
 
@@ -104,121 +64,9 @@ VPC                 1
 EC2 Instances       0         
 RDS Databases       0         
 S3 Buckets          0         
-Security Groups     2         
+Security Groups     1         
 IAM Roles           2         
-Subnets             6         
-EBS Volumes         0         
-Network ACLs        1         
-----------------------------------------
-
-=== Account: IAM_Account ===
-
---- Region: us-east-1 ---
-
-Resource Type: VPC
-Resource ID: vpc-071708cdb39aeefcc
-Metadata:
-    cidr_block: 172.31.0.0/16
-    is_default: True
-    state: available
-----------------------------------------
-Resource Type: iam_role
-Resource ID: AWSServiceRoleForSupport
-Metadata:
-    RoleId: AROAY33YOHYFEZZJJ3WCB
-    Arn: arn:aws:iam::609601076746:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport
-    CreateDate: 2023-03-09 13:47:10+00:00
-    Tags: N/A
-----------------------------------------
-Resource Type: iam_role
-Resource ID: AWSServiceRoleForTrustedAdvisor
-Metadata:
-    RoleId: AROAY33YOHYFMP5SNMRQ5
-    Arn: arn:aws:iam::609601076746:role/aws-service-role/trustedadvisor.amazonaws.com/AWSServiceRoleForTrustedAdvisor
-    CreateDate: 2023-03-09 13:47:10+00:00
-    Tags: N/A
-----------------------------------------
-Resource Type: security_group
-Resource ID: sg-057e1841c22d4586a
-Metadata:
-    GroupName: default
-    Description: default VPC security group
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: security_group
-Resource ID: sg-000ba8b20ef9fc312
-Metadata:
-    GroupName: MYSGGROUP
-    Description: TESTING SCRIPT
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: [{'Key': 'name', 'Value': 'test security groups'}]
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0e7e44b6d3cf60b58
-Metadata:
-    CidrBlock: 172.31.48.0/20
-    AvailabilityZone: us-east-1e
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-07adc4992f36ea9e6
-Metadata:
-    CidrBlock: 172.31.64.0/20
-    AvailabilityZone: us-east-1f
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0cfc424d49edc08ec
-Metadata:
-    CidrBlock: 172.31.80.0/20
-    AvailabilityZone: us-east-1a
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0ddb659445d316f19
-Metadata:
-    CidrBlock: 172.31.16.0/20
-    AvailabilityZone: us-east-1b
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0021be1373b19a385
-Metadata:
-    CidrBlock: 172.31.32.0/20
-    AvailabilityZone: us-east-1c
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: subnet
-Resource ID: subnet-0110824f32ecd753b
-Metadata:
-    CidrBlock: 172.31.0.0/20
-    AvailabilityZone: us-east-1d
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: N/A
-----------------------------------------
-Resource Type: network_acl
-Resource ID: acl-0d945c4b448406e47
-Metadata:
-    VpcId: vpc-071708cdb39aeefcc
-    Tags: []
-----------------------------------------
-
---- Resource Summary ---
-Resource Type       Count     
-----------------------------------------
-VPC                 1         
-EC2 Instances       0         
-RDS Databases       0         
-S3 Buckets          0         
-Security Groups     2         
-IAM Roles           2         
-Subnets             6         
+Subnets             2         
 EBS Volumes         0         
 Network ACLs        1         
 ----------------------------------------

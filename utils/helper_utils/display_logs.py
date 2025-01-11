@@ -7,7 +7,7 @@ def log_message(message, log_level="INFO"):
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     log_colors = {
-        "INFO": Fore.GREEN,
+        "INFO": Fore.LIGHTGREEN_EX,
         "WARNING": Fore.YELLOW,
         "HINTS": Fore.MAGENTA,
         "ERROR": Fore.RED,

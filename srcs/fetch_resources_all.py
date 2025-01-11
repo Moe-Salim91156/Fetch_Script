@@ -1,6 +1,7 @@
 import os
 import json
 import boto3
+from colorama import Fore, Style, init
 
 from fetchers.fetch_vpcs import fetch_vpcs
 from fetchers.fetch_Ec2 import fetch_ec2_instances
@@ -13,12 +14,14 @@ from fetchers.fetch_S3_Buckets import fetch_S3_Buckets
 from fetchers.fetch_iam_roles import fetch_iam_roles
 
 from utils.helper_utils.create_session import create_aws_session
-from utils.helper_utils.display_results import display_resources
+#from utils.helper_utils.display_results import display_resources,calculate_resource_summary,display_account_summary
+from utils.helper_utils.display_results import write_to_terminal
 from utils.helper_utils.get_regions import get_user_input_regions
 from utils.helper_utils.get_regions import get_all_regions
 from utils.helper_utils.read_config_file import read_config_file
 from utils.helper_utils.display_logs import log_message
 from utils.helper_utils.write_to_output_file import write_to_file
+
 from utils.db_utils.init import initialize_db
 from utils.db_utils.insert import insert_resources_into_db
 from utils.db_utils.display import display_resources_table
@@ -27,7 +30,10 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
     write_to_file([],"w")
     with open("output_files/log.txt", "w") as log_file_handle:
         log_file_handle.truncate(0)
+
     all_resources = []
+    account_summary = {}  # To keep track of resource counts per account
+
     for account in config.get('accounts', []):
         profile_name = account.get('profile_name')
         if not profile_name:
@@ -46,8 +52,10 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
 
         regions = account.get('regions') or get_user_input_regions(account_name)
 
+        account_resources = {}  # To track resources per region in an account
+
         for region in regions:
-            log_message(f"Fetching resources for account '{account_name}' in region '{region}'")
+            log_message(f"Fetching resources for account {Style.BRIGHT}({account_name})in region({region})")
             resources = []
             resources.extend(fetch_vpcs(session, region, account_name))
             resources.extend(fetch_ec2_instances(session, region, account_name))
@@ -58,9 +66,12 @@ def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
             resources.extend(fetch_ebs(session, region, account_name))
             resources.extend(fetch_subnets(session, region, account_name))
             resources.extend(fetch_acls(session, region, account_name))
+
+            account_resources[region] = resources
             all_resources.extend(resources)
-            log_message(f"Completed fetching resources for account '{account_name}' in region '{region}'")
-            write_to_file(resources,"a")
+            log_message(f"Completed fetching resources for account {Style.BRIGHT}({account_name}){Style.RESET_ALL} in region ({region})")
+            write_to_file(resources, "a")
+            write_to_terminal(resources)
 
 
     insert_resources_into_db(all_resources, db_path)

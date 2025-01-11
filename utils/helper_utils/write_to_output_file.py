@@ -1,4 +1,5 @@
 from utils.helper_utils.display_logs import log_message
+
 def format_metadata(metadata):
     """Format metadata into key-value pairs."""
     return "\n".join([f"    {key}: {value}" for key, value in metadata.items()])
