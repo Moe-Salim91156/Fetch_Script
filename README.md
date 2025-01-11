@@ -57,7 +57,7 @@ Create or update the configuration file `config.json` inside the `config/` folde
         {
             "account_name": "New_Account",
             "profile_name": "new_account_profile",
-            "regions": ["us-west-2", "eu-central-1"]
+            "regions": ["us-west-2", "eu-central-1"] # or put [] for all regions fetch
         }
     # add other accounts/profiles 
     ]
