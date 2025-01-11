@@ -44,27 +44,36 @@ Make sure your AWS CLI is configured with valid credentials:
 ```bash
 aws configure
 ```
+
+Make sure your AWS CLI is configured with valid credentials:
+
+aws configure --profile <profile-name>
+
 You will need to provide your AWS Access Key ID, Secret Access Key, default region, and output format.
 
 ### 4. Prepare the Config File
 
-Create a configuration file named `config.json` inside a `config/` folder. The file should have the following structure:
-
+Create or update the configuration file config.json inside the config/ folder. The file should have the following structure for multiple accounts:
 ```json
 {
     "accounts": [
         {
-            "account_id": "123456789012",
-            "role_name": "RoleToAssume",
-            "regions": ["us-east-1", "us-west-1"]
+            "account_name": "Root_Account",
+            "profile_name": "default",
+            "regions": ["us-east-1"]
+        },
+        {
+            "account_name": "New_Account",
+            "profile_name": "new_account_profile",
+            "regions": ["us-west-2", "eu-central-1"] # or u can put [] for all regions
         }
     ]
 }
+
 ```
 
 - **accounts**: A list of AWS accounts to access.
-- **account_id**: The AWS account ID.
-- **role_name**: The IAM role name to assume for cross-account access.
+- **profile_name**: The AWS profile inside account or whole other account.
 - **regions**: (Optional) A list of regions to query. If omitted, the script will prompt the user to input regions.
 
 ### 5. Run the Script
