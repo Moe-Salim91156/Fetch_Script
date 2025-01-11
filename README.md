@@ -49,14 +49,19 @@ aws configure --profile <profile-name>
 You will need to provide your AWS Access Key ID, Secret Access Key, default region, and output format.
 
 ### 4. Prepare the Config File
+respect the  ~/.aws/credentials structure  for example :
+
+[default] 
+aws_access_key_id = <your acess key>
+aws_secret_access_key = <your secret access key>
 
 Create or update the configuration file `config.json` inside the `config/` folder. The file should have the following structure for multiple accounts:
 ```json
 {
     "accounts": [
         {
-            "account_name": "New_Account",
-            "profile_name": "new_account_profile",
+            "account_name": "ROOT_ACCOUNT(whatever)",
+            "profile_name": "default", # name in ~/.aws/credentials
             "regions": ["us-west-2", "eu-central-1"] # or put [] for all regions fetch
         }
     # add other accounts/profiles 
