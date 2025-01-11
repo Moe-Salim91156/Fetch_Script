@@ -28,6 +28,7 @@ from utils.db_utils.display import display_resources_table
 
 def fetch_resources_for_accounts(config, db_path="output_files/resources.db"):
     "fetch all resources form accounts and displays them, also cheks for erros"
+
     write_to_file([], "w")
     with open("output_files/log.txt", "w") as log_file_handle:
         log_file_handle.truncate(0)

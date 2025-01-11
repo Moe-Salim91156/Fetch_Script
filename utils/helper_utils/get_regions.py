@@ -14,6 +14,7 @@ def get_user_input_regions(account_name):
     Prompt the user to specify regions for an account.
     If the user presses Enter, return all available regions.
     """
+
     user_input = input(f"\nSpecify regions for account '{account_name}' (comma-separated), or press Enter for all regions: ").strip()
     if not user_input:
         print("Fetching all available regions...")

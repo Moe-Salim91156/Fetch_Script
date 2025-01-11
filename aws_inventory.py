@@ -8,7 +8,6 @@ from utils.db_utils.insert import insert_resources_into_db
 def main():
     config_file = 'config/config.json'
     try:
-        # Load the configuration file
         with open(config_file, "r") as file:
             config = json.load(file)
     except FileNotFoundError:

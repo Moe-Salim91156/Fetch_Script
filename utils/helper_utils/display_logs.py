@@ -4,6 +4,8 @@ from colorama import Fore, Style, init
 init(autoreset=True)
 
 def log_message(message, log_level="INFO"):
+    "log function to display log nessages"
+
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
     log_colors = {

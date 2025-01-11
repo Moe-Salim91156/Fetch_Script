@@ -1,6 +1,8 @@
 import boto3
 from utils.helper_utils.display_logs import log_message
 def create_aws_session(profile): # takes profile as argument and create for each account a seesion
+    "init aws session to start fetching"
+
     try:
         session = boto3.Session(profile_name=profile)
         log_message(f"Session for Profile : ({profile}) has been created Sucessfully")

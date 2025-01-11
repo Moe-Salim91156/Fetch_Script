@@ -2,10 +2,12 @@ from utils.helper_utils.display_logs import log_message
 
 def format_metadata(metadata):
     """Format metadata into key-value pairs."""
+
     return "\n".join([f"    {key}: {value}" for key, value in metadata.items()])
 
 def write_resource_details(file, resource):
     """Write details for a single resource."""
+
     file.write(f"Resource Type: {resource['resource_type']}\n")
     file.write(f"Resource ID: {resource['resource_id']}\n")
     file.write("Metadata:\n")
@@ -14,6 +16,7 @@ def write_resource_details(file, resource):
 
 def update_resource_summary(resource_summary, resource_type):
     """Update the resource summary with the count of a specific resource type."""
+
     resource_type_map = {
         "vpc": "VPC",
         "iam_role": "IAM Roles",
@@ -26,7 +29,7 @@ def update_resource_summary(resource_summary, resource_type):
         "ebs_volume": "EBS Volumes"
     }
 
-    resource_type = resource_type.lower()  # Ensure matching case
+    resource_type = resource_type.lower()
     if resource_type in resource_type_map:
         mapped_type = resource_type_map[resource_type]
         if mapped_type in resource_summary:
@@ -38,6 +41,7 @@ def update_resource_summary(resource_summary, resource_type):
 
 def write_resource_summary(file, resource_summary):
     """Write the summary of resource counts."""
+
     file.write("\n--- Resource Summary ---\n")
     file.write(f"{'Resource Type':<20}{'Count':<10}\n")
     file.write("-" * 40 + "\n")
@@ -47,6 +51,8 @@ def write_resource_summary(file, resource_summary):
 
 
 def write_to_file(resources, mode):
+    "write the whole run to an output file for further use"
+
     if mode == "w":
         with open("output_files/output.txt", mode):
             pass
