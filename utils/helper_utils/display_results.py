@@ -4,8 +4,6 @@ from collections import Counter
 from colorama import Fore, Style, init
 from utils.helper_utils.write_to_output_file import update_resource_summary
 
-from colorama import Fore
-
 def write_resource_details_to_terminal(resource):
     """Display details for a single resource in the terminal."""
     print(f"{Fore.LIGHTGREEN_EX}Resource Type: {Fore.RESET}{Style.BRIGHT}{Fore.YELLOW}{resource['resource_type']}")
@@ -19,10 +17,10 @@ def write_resource_summary_to_terminal(resource_summary):
     """Display the summary of resource counts in the terminal."""
     print(f"{Fore.LIGHTCYAN_EX}{Style.BRIGHT}--- Resource Summary ---{Style.RESET_ALL}")
     print(f"{'Resource Type':<20}{'Count':<10}")
-    print(f"{Fore.LIGHTWHITE_EX}{'-' * 40}{Style.RESET_ALL}")  # Grey divider
+    print(f"{Fore.LIGHTWHITE_EX}{'-' * 40}{Style.RESET_ALL}")
     for resource_type, count in resource_summary.items():
         print(f"{Fore.LIGHTBLUE_EX}{resource_type:<20}{Fore.LIGHTYELLOW_EX}{count:<10}{Style.RESET_ALL}")
-    print(f"{Fore.WHITE}{'-' * 40}{Style.RESET_ALL}")  # Grey divider
+    print(f"{Fore.WHITE}{'-' * 40}{Style.RESET_ALL}")
 
 def update_region_summary(region_summary, resource_type):
     """Update resource count summary for the region."""
@@ -38,7 +36,7 @@ def update_region_summary(region_summary, resource_type):
         "ebs_volume": "EBS Volumes"
     }
 
-    resource_type = resource_type.lower()  # Ensure matching case
+    resource_type = resource_type.lower()
     if resource_type in resource_type_map:
         mapped_type = resource_type_map[resource_type]
         if mapped_type in region_summary:
